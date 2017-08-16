@@ -1,0 +1,15 @@
+<div class="body">
+    <h4>Power Component</h4>
+    <div class="header">
+    <h1>Initial Power Level:</h1>
+        <input type="number" name="power" min="1" max="100" [(ngModel)]="powerLevel" #power="ngModel"> 
+        <button type="button" (click)='human.sumPowerLevel(); saiyan.sumPowerLevel(); supersaiyan.sumPowerLevel(); supersaiyan2.sumPowerLevel(); supersaiyan3.sumPowerLevel(); supersaiyan4.sumPowerLevel();'>Calculate Powers</button>
+    </div>
+    <app-human #human [powerLevel] = "powerLevel"></app-human>
+    <app-saiyan #saiyan [powerLevel] = "powerLevel"></app-saiyan>
+    <app-supersaiyan #supersaiyan [powerLevel] = "powerLevel"></app-supersaiyan>
+    <app-supersaiyan2 #supersaiyan2 [powerLevel] = "powerLevel"></app-supersaiyan2>
+    <app-supersaiyan3 #supersaiyan3 [powerLevel] = "powerLevel"></app-supersaiyan3>
+    <app-supersaiyan4 #supersaiyan4 [powerLevel] = "powerLevel"></app-supersaiyan4>
+</div>
+
